@@ -1,0 +1,22 @@
+package problems;
+import java.util.Scanner;
+public class problem_b {
+
+	public static void main(String[] args) {
+ Scanner input = new Scanner(System.in);
+ 
+ System.out.print("Enter number of inches: ");
+ int totalInches = input.nextInt();
+ 
+ int yards = totalInches / (3 * 12);
+		int remainingInches = totalInches % (3*12);
+		
+	int	feet = remainingInches / 12;
+	int inches = remainingInches % 12;
+	
+	System.out.println("Yards: " + yards);
+	System.out.println("Feet:" + feet);		
+System.out.println("Inches:" + inches);
+}
+
+}
